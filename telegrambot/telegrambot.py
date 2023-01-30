@@ -16,7 +16,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await update.message.reply_text(f'/hello\n/help\n/sum')
 
 
-app = ApplicationBuilder().token("5947576228:AAF9L6TXEUffzbB81_aUZUCwbt4WdprQJiI").build()
+app = ApplicationBuilder().token("token").build()
 print("Server start")
 
 app.add_handler(CommandHandler("hello", hi_command))
